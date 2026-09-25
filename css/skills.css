@@ -1,0 +1,183 @@
+/* =========================================
+   SKILLS PAGE
+========================================= */
+
+.skills-section {
+    padding: 35px 0 50px;
+}
+
+
+/* =========================================
+   SKILL ROW
+========================================= */
+
+.skill-row {
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 25px;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.skill-row:first-child {
+    border-top: 1px solid #e5e7eb;
+}
+
+
+/* =========================================
+   SKILL TITLE
+========================================= */
+
+.skill-title {
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   SKILL CONTENT
+========================================= */
+
+.skill-content {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================
+   SKILL TAGS
+========================================= */
+
+.skill-content span {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    background: #f8fafc;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 5px;
+
+    color: #374151;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+
+    transition: all 0.2s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.skill-content span:hover {
+    border-color: #2563eb;
+
+    color: #2563eb;
+
+    background: #f8fafc;
+}
+
+/* =========================================
+   SKILLS PAGE HEADER
+========================================= */
+
+.page-hero {
+    padding: 20px 0 15px;
+    margin: 0;
+}
+
+.page-hero .section-label {
+    margin: 0 0 5px 0;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #2563eb;
+}
+
+.page-hero h1 {
+    margin: 0 0 6px 0;
+
+    font-size: 26px;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.page-hero p {
+    max-width: 600px;
+
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #6b7280;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .skills-section {
+        padding: 25px 0 40px;
+    }
+
+    .skill-row {
+        grid-template-columns: 1fr;
+
+        gap: 7px;
+
+        padding: 13px 0;
+    }
+
+    .skill-title {
+        font-size: 13px;
+    }
+
+    .skill-content {
+        gap: 5px;
+    }
+
+    .skill-content span {
+        padding: 4px 7px;
+
+        font-size: 11px;
+    }
+
+    .page-hero {
+        padding: 40px 0 25px;
+    }
+
+    .page-hero h1 {
+        font-size: 27px;
+    }
+
+    .page-hero p {
+        font-size: 13px;
+
+        line-height: 1.5;
+    }
+}
